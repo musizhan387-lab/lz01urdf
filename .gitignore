@@ -1,0 +1,15 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+.cache/
+.vscode/
+.idea/
+*.bag
+*.db3
+*.mcap
+*.sqlite
+*.sqlite3
