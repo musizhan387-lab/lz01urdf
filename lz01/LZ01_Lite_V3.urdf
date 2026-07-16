@@ -1128,7 +1128,7 @@
   <joint name="torso_yaw_link_to_camera_link" type="fixed">
     <parent link="torso_yaw_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.01 0 0.3225" rpy="0 0.651 0"/>
+    <origin xyz="0.0441828 0 0.32325" rpy="0 0.349066 0"/>
   </joint>
 
 
@@ -1314,4 +1314,22 @@
       effort="36"
       velocity="10.4" />
   </joint>
+  <!-- Left arm planning tip -->
+<link name="left_hand_tip"/>
+
+<joint name="left_elbow_to_hand_tip" type="fixed">
+  <parent link="left_elbow_link"/>
+  <child link="left_hand_tip"/>
+  <origin xyz="0 0 -0.24" rpy="0 0 0"/>
+</joint>
+
+
+<!-- Right arm planning tip -->
+<link name="right_hand_tip"/>
+
+<joint name="right_elbow_to_hand_tip" type="fixed">
+  <parent link="right_elbow_link"/>
+  <child link="right_hand_tip"/>
+  <origin xyz="0 0 -0.24" rpy="0 0 0"/>
+</joint>
 </robot>
